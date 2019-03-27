@@ -2,516 +2,149 @@
 <html lang="ja">
 
 <head>
+  <title>LMHRST</title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>:::SHO:::DESIGN:::</title>
-  </title>
-  <style>
-    .port {
-      -webkit-animation: fade 7s linear;
-      -moz-animation: fade .7s linear;
-      -ms-animation: fade .7s linear;
-      -o-animation: fade .7s linear;
-      animation: fade .7s linear;
-      transition: ease;
-    }
-  </style>
-  <link rel="shortcut icon" href="Img_Lmhrst_Top/logo_3.png">
+  <link rel="shortcut icon" href="Img_Lmhrst_Top/Hr_logo.png" >
+  <link rel="stylesheet" href="css/reset.css">
   <link href="css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/sho_design_9.css">
-  <link href="artworks.html">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Sawarabi+Mincho" rel="stylesheet">
+  <link rel="stylesheet" href="css/LMHRST_4.css">
 </head>
 
 <body>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/snap.svg-min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-  <script src="js/jquery.lazylinepainter-1.7.0.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/sho_design_4.js"></script>
+  <script>
+    // $(function(){
+    //     $('img.niwa').(function(){
+    //         $('img.niwa.click.again').removeClass("again");
+    //         $('img.niwa').addClass("click");
+    //         $('.none').css("display", "block");
+    //     });
+    // });
 
-
-<div id="container">
-  <div class="header">
-    <div class="LogoHolder">
-      <img src="Img_Lmhrst_Top/logo_3.png" height="72" class="logo css3-C" style="z-index:2;">
-      <img src="Img_ShoDesign_Top/sho_design_logo.png" class="logo_name" height="40" id="closemaster" style="cursor: pointer;">
+    //-----------------niwa---------------------------------
+    $(function() {
+      $('#one').hover(function() {
+        $('img.niwa').addClass("click");
+        $('img.niwa.again').removeClass("again");
+        $('img.nori.click').addClass("again");
+        $('img.kaku.click').addClass("again");
+        $('#v').css("display", "block");
+        $('#v2').css("display", "none");
+        $('#v3').css("display", "none");
+        $('.none').css("display", "block");
+        $('.none2').css("display", "none");
+        $('.none3').css("display", "none");
+      });
+    });
+    // -----------------kaku------------------------
+    $(function() {
+      $('#two').hover(function() {
+        $('img.kaku').addClass("click");
+        $('img.kaku.again').removeClass("again");
+        $('img.nori.click').addClass("again");
+        $('img.niwa.click').addClass("again");
+        $('#v').css("display", "none");
+        $('#v2').css("display", "block");
+        $('#v3').css("display", "none");
+        $('.none').css("display", "none");
+        $('.none2').css("display", "block");
+        $('.none3').css("display", "none");
+      });
+    });
+    //----------------nori---------------------------
+    $(function() {
+      $('#three').hover(function() {
+        $('img.nori').addClass("click");
+        $('img.nori.again').removeClass("again");
+        $('img.niwa.click').addClass("again");
+        $('img.kaku.click').addClass("again");
+        $('#v').css("display", "none");
+        $('#v2').css("display", "none");
+        $('#v3').css("display", "block");
+        $('.none').css("display", "none");
+        $('.none2').css("display", "none");
+        $('.none3').css("display", "block");
+      });
+    });
+  </script>
+  <div class="onetothree">
+    <img src="Img_Lmhrst_Top/niwa_1.png" class="furi" height="18px" style="margin-left:-46.9%;">
+    <img src="Img_Lmhrst_Top/niwa_1.png" class="furi" height="18px" style="margin-left:-46.9%; bottom:20px;">
+    <img src="Img_Lmhrst_Top/kaku_1.png" class="furi" height="18px" style="margin: 0 auto;">
+    <img src="Img_Lmhrst_Top/kaku_2.png" class="furi" height="18px" style="margin: 0 auto; bottom:20px;">
+    <div id="header">
+      <img src="Img_Lmhrst_Top/LMHRST_logo.svg" class="names">
     </div>
-    <div class="navi">
-      <div class="Sumana navi_contents workss aw" id="works">Works</a></div>
-      <div class="Sumana navi_contents aboutMe aw" id="aboutMe">About Me</div>
+    <div id="one">
+      <div class="wrap" style="height: 100%">
+          <img src="Img_Lmhrst_Top/niwa.png" class="niwa" height="100px" width="100px">
+          <div class="none">
+            <div class="none_wrap">
+              <img src="Img_Lmhrst_Top/Sentence_left2.svg">
+              <a href="sho_design.html"><img src="Img_Lmhrst_Top/logo_3.png"></a>
+            </div>
+          </div>
+        <div class="invisual">
+          <!-- <video loop autoplay muted id="v" width="100%">
+            <source src="videos/kehai__web.mp4">
+          </video> -->
+          <img src="videos/fish.gif" muted id="v" height="900" class="pocha" style="margin-top:20%; margin-left:20%;">
+        </div>
+      </div>
+    </div>
+    <div id="two">
+      <div class="wrap" style="height: 100%">
+        <img src="Img_Lmhrst_Top/kaku.png" class="kaku" height="100" width="100">
+        <div class="none2">
+          <div class="none_wrap">
+            <img src="Img_Lmhrst_Top/Sentence_center2.svg">
+            <a href="hikyo.html"><img src="Img_Lmhrst_Top/hikyo_logo.svg"></a>
+          </div>
+        </div>
+        <div class="invisual">
+          <video loop autoplay muted id="v2" height="100%">
+            <source src="videos/RT.mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div id="three">
+      <div class="wrap" style="height: 100%">
+        <img src="Img_Lmhrst_Top/nori.png" class="nori" height="100px" width="100px">
+        <div class="none3">
+          <div class="none_wrap">
+            <img src="Img_Lmhrst_Top/Sentence_right2.svg">
+            <div class="sns_logos">
+              <a href="https://www.instagram.com/shota_nemoto/" style="text-decoration:none;">
+                <img src="Img_Lmhrst_Top/glyph-logo_May2016.png" height="40" style="margin-right:5px;">
+              </a>
+              <a href="https://soundcloud.com/user-859157567" style="text-decoration:none;">
+                <img src="Img_Lmhrst_Top/3722.png" height="40" style="margin-left:10px;">
+              </a>
+              <a href="https://www.behance.net/emsht-kras65b0#" style="text-decoration:none;">
+                <img src="Img_Lmhrst_Top/behance-icon-614x460.png" height="50">
+              </a>
+              <a href="https://www.facebook.com/shotanemotokk" style="text-decoration:none;">
+                <img src="Img_Lmhrst_Top/facebook-3.svg"  height="45">
+              </a>
+            </div>
+            <p class="mail">sho0930k@gmail.com</p>
+          </div>
+        </div>
+        <div class="invisual">
+          <video loop autoplay muted id="v3" width="90%" style="margin: 100px auto;">
+            <source src="videos/lam3.mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <img src="Img_Lmhrst_Top/nori_1.png" class="furi" height="16px" style="margin:0 auto;">
+    <img src="Img_Lmhrst_Top/nori_1.png" class="furi" height="16px" style="bottom:20px;">
+    <div id="footer">
+      <img src="Img_Lmhrst_Top/CopyRight.png" class="names">
     </div>
   </div>
-  <div class="Height_Adjust"></div>
-<!--///////////////////////////////// works ////////////////////////////////////////-->
-
-<div class="works">
-
-    <div class="batu">
-      <img src="Img_Sub/batu.svg" height="30" style="cursor:pointer;" id="batu">
-    </div>
-
-    <div class="col-sm-2 Gifs" style="overflow:hidden; text-align:center;">
-        <img src="videos/fish.gif" height="500" class="pocha">
-        <img src="videos/end.gif" height="200" class="pocha">
-        <!-- <img src="videos/pocha.gif" height="150" class="pocha">
-        <img src="videos/hikyo.gif" class="hikyo">
-        <img src="videos/gei.gif" class="pocha"> -->
-    </div>
-
-
-    <div class="col-sm-12 col-sm-12 col-md-9 container g_d" style="text-align: center;">
-      <div class="row">
-        <div class="row_contents">
-          <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="col-sm-4_con">
-                <div id="g7" class="background:black;">
-                    <figure>
-                      <img src="Img_ShoDesign_Top/kehai_top.png" class="img">
-                      <figcaption>
-                        <p class="connection Sumana">KEHAI Installation</p>
-                      </figcaption>
-                    </figure>
-                </div>
-              </div>
-            </div>
-          <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="col-sm-4_con">
-                <div id="g8">
-                    <figure>
-                      <img src="Img_ShoDesign_Top/Ozumo_web.png" class="img">
-                      <figcaption>
-                        <p class="connection Sumana">Abema Ozumo Poster</p>
-                      </figcaption>
-                    </figure>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3">
-                <div class="col-sm-4_con">
-                  <div id="g6">
-                      <figure>
-                        <img src="Img_ArtWork/shaka/shaka.png" class="img">
-                        <figcaption>
-                          <p class="connection Sumana">SUKISHA - 釈迦の手のひら</p>
-                        </figcaption>
-                      </figure>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                  <div class="col-sm-4_con">
-                    <div id="g5">
-                        <figure>
-                          <img src="Img_ArtWork/SoundSelector/Sound_Selector.png" class="img">
-                          <figcaption>
-                            <p class="connection Sumana">Sound Selector UI</p>
-                          </figcaption>
-                        </figure>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-3">
-                    <div class="col-sm-4_con">
-                      <div id="g2">
-                          <figure>
-                            <img src="Img_ArtWork/Hikyo/Hikyo_Font.png" class="img">
-                            <figcaption>
-                              <p class="connection Sumana">Font Design</p>
-                            </figcaption>
-                          </figure>
-                      </div>
-                    </div>
-                  </div>
-                <div class="col-xs-6 col-sm-6 col-md-3">
-                    <div class="col-sm-4_con">
-                      <div id="g4">
-                          <figure>
-                            <img src="Img_ArtWork/BYB/BYB.png" class="img">
-                            <figcaption>
-                              <p class="connection Sumana">Beside Your Bedside EP</p>
-                            </figcaption>
-                          </figure>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-3">
-                      <div class="col-sm-4_con">
-                        <div id="g3">
-                            <figure>
-                              <img src="Img_ArtWork/KHSIER/KHSIER.png" class="img">
-                              <figcaption>
-                                <p class="connection Sumana">Cartoon Vape Design</p>
-                              </figcaption>
-                            </figure>
-                        </div>
-                      </div>
-                    </div>
-        </div>
-      </div>
-    </div>
-
-<!--/////////////////////////////////// r_pop//////////////////////////////////////////// -->
-
-    <div class="col-sm-12 col-md-2 r_pop_container">
-      <div id="r_pop2">
-        <h1 class="f16 Sumana Spacing_100"style="line-height:150%;"><b>Hikyo Font</b>
-        <div class="f10 Spacing_18 Sumana">Font Design</div>
-        <div class="Spacing_150 f11">
-          <b>Detail</b>
-        </div>
-        <div class="margin_top_18 gray f10 Sawarabi justify">
-          直線や円を感じるサンセリフ体のフォントを作成しようと考え、直線と円をガイドに、バランス良く調整した。tやjなどの尾の部分に丸みを付けて且つ他の文字と馴染ませることで新規性を出した。Bauahus(書体)の文献にもあるように、ただ円と直線でフォントを作成しても不恰好に見えてしまうので、細くするべき部分は細くしたり、フォントとして読めることに重点を置いて制作することを心がけた。
-        </div>
-        <div class="Sumana margin_top_18 gray f10 justify">
-          I tried to create a font of a sans serif feeling a straight line or a circle, and I adjusted the balance in a straight line and a circle as a guide. I made novelty by rounding the tail part such as t and j and making it familiar with other characters. As we can see in Bauahus (font) literature, even if we create a font with just a circle and a straight line, it looks awkward, so I make it thinner and focus on emphasis on being able to read as font I tried to remember.
-        </div>
-      </div>
-
-      <div id="r_pop">
-        <h1 class="f24 Sumana"><b>CONNECTION</b>
-        <div class="Spacing_60 f12 Sumana">Fashion / Advertisement</div>
-        <div class="f11 Spacing_50 Sumana">
-          Cooperation
-        </div>
-        <div style="color:gray" class="f10 margin_top_24 Sumana">
-          Shoya Uehara (Clothes)<br><br> Nami Uehara(Model)<br>
-        </div>
-        <div class="Spacing_50 Sumana f11">
-          Introduction
-        </div>
-        <div class="Sawarabi margin_top_18 gray f10">
-          文化服装学院所属のデザイナー、Shoya Ueharaのブランド CONNECTION の 2018 Winter Collection のクリエイティブを担当した。フィルム表現でストリートを表現した。
-        </div>
-        <div class="Sumana Spacing_18 gray f10">
-          I was in charge of creative in 2018 Winter Collection of brand CONNECTION of Shoya Uehara, a designer belonging to Institute of Cultural Fashion. I tried to express elegant and street graphics.
-        </div>
-      </div>
-
-      <div id="r_pop3">
-        <h1 class="f16 Sumana Spacing_100"style="line-height:150%;"><b>KHSIER Cartoon Vape</b>
-        <div class="f10 Spacing_18 Sumana">Product / Advertisement</div>
-        <div class="Spacing_150 f11">
-          <b>Detail</b>
-        </div>
-        <div class="margin_top_18 gray f10 Sawarabi justify">
-          親しみやすく、今まで見たことのないようなVapeをブランディングしようと考え、カートゥーンの世界観で統制したVapeをデザインすることで、新規性に加え、手に取りたくような親近感を獲得しようと考えた。艶めかしい美しさと、愛らしい美しさの2種類のコンセプトを決定し、それぞれ2色展開した。
-        </div>
-        <div class="Sumana margin_top_18 gray f10 justify">
-          Thinking about branding Vape that I'm familiar with so far, I tried to branding Vape that I had never seen before, and by designing Vape controlled by Cartoon's view of the world, in addition to the novelty, I wanted to acquire the familiar feeling that I wanted to pick up Thought. Two concepts of glossy beauty and lovely beauty were decided, each developed in two colors.
-        </div>
-      </div>
-
-      <div id="r_pop4">
-        <h1 class="f16 Sumana Spacing_100"style="line-height:150%;"><b>Beside Your Bedside EP</b>
-        <div class="f10 Spacing_18 Sumana">Jacket Design</div>
-        <div class="Spacing_150 f11">
-          <b>Detail</b>
-        </div>
-        <div class="margin_top_18 gray f10 Sawarabi justify">
-          都内を中心に活躍しているアーティスト、SUKISHAのEP「Beside Your Bedside」のジャケットをデザインした。空間に意味を持たせるため、ベッドの横の空間にはあえてオブジェクトや文字は配置しないようにした。
-        </div>
-        <div class="Sumana margin_top_18 gray f10 justify">
-          Designed a jacket of SUKISHA's EP "Beside Your Bedside", an artist active in Tokyo. In order to make space meaningful, we did not dare to arrange objects and letters in the space beside the bed.
-        </div>
-      </div>
-
-      <div id="r_pop5">
-        <h1 class="f16 Sumana Spacing_100" style="line-height:150%;"><b>Sound Selector</b>
-        <div class="f10 Spacing_18 Sumana">UI Design</div>
-        <div class="Spacing_150 f11">
-          <b>Introduction</b>
-        </div>
-        <div class="margin_top_18 gray f10 Sawarabi justify">
-          SOUNDCLOUDは、トラックメイカーとユーザーの繋がりをより密にする便利なツールであるが、故にユーザー同士の繋がりを充実させるコンテンツがあまりない。そこで、ユーザー同士の繋がりという点にフォーカスしてSOUNDCLOUDを補填するツールとしてSound Selectorを考えた。
-        </div>
-        <div class="Sumana margin_top_18 gray f10 justify">
-          SOUNDCLOUD is a convenient tool that makes truckmakers and users tighter, but there are not so many contents that enhance the connection between users. So I thought of Sound Selector as a tool to supplement SOUNDCLOUD in terms of connection between users.
-        </div>
-      </div>
-
-      <div id="r_pop6">
-        <h1 class="f16 Spacing_100 Sumana" style="line-height:150%;"><b>SUKISHA - 釈迦の手のひら</b>
-        <div class="f10 Spacing_18 Sumana">Jacket Design</div>
-        <div class="Spacing_100 f11 Sumana">
-          <b>Detail</b>
-        </div>
-        <div class="Sawarabi margin_top_18 gray f10 justify">
-          都内を中心に活躍しているアーティスト、SUKISHAの楽曲「釈迦の手のひら」のジャケットをデザインした。メロウなトラックと幻想的な歌詞に合わせて流動的なイラストを製作し、タイトルロゴはイラストと対照的に直線を用いることで浮かせて強調した。
-        </div>
-        <div class="Sumana margin_top_18 gray f10 justify">
-          Designed a jacket of SUKISHA's song "Buddha's palm", an artist active in Tokyo. I made a fluid illustration according to mellow tracks and fantastic lyrics and emphasized the title logo floating by using straight lines as opposed to illustration.
-        </div>
-
-      </div>
-
-      <div id="r_pop7">
-        <h1 class="f16 Sumana Spacing_100"><b>KEHAI</b>
-        <div class="f10 Spacing_18 Sumana">Motion Typography</div>
-        <div class="Spacing_150 f11">
-          <b>Model</b>
-        </div>
-        <div class="margin_top_24 gray f10  Sawarabi">
-          竹井 未来望 / &nbsp;&nbsp;Mirano Takei
-        </div>
-        <div class="Spacing_80 f11 Sumana">
-          <b>Detail</b>
-        </div>
-        <div class="Sawarabi Spacing_18 gray f10 justify">
-          Abema TVにて絶賛放送中の「Abema TV 大相撲」のポスター制作をアートディレクターのもと行った。花札のような世界観を崩さないようレイアウトには十分気を使った。
-        </div>
-        <div class="Sumana Spacing_18 gray f10 justify">
-          I made a poster for "Abema TV Ozumo" under the auspices of Abema TV under the art director. I care enough for the layout so as not to destroy the view of the world like a Japanese Hanahuda.
-        </div>
-      </div>
-
-      <div id="r_pop8">
-        <h1 class="f16 Sumana Spacing_100"><b>Abema Ozumo Poster</b>
-        <div class="f10 Spacing_18 Sumana">Advertisement</div>
-        <div class="Spacing_150 f11">
-          <b>Producer</b>
-        </div>
-        <div class="margin_top_24 gray f10 justify Sawarabi">
-          鈴井 聡太郎　/ &nbsp;&nbsp;Sotaro Suzui
-        </div>
-        <div class="Spacing_50 f11">
-          <b>Art Director</b>
-        </div>
-        <div class="margin_top_24 gray f10 justify Sawarabi">
-          松島　佑樹　/ &nbsp;&nbsp;Yuki Matsushima
-        </div>
-        <div class="Spacing_80 f11 Sumana">
-          <b>Detail</b>
-        </div>
-        <div class="Sawarabi Spacing_18 gray f10 justify">
-          AbemaTVにて絶賛放送中の「AbemaTV 大相撲」のポスター制作を、アートディレクターのもと行った。花札のような世界観を崩さないよう、モチーフ（特に雲）やロゴの自然なレイアウト、モデルの影の色選定（メインカラーを活かす色）などには十分気を遣った。また、イラストの鳳凰が、メインモチーフであるモデルの印象を妨げないよう、相互関係を意識してスケーリング・ポジショニングを調整した。縦版広告のうち一つは、サイバーエージェント20周年誌に掲載される予定。
-        </div>
-        <div class="Sumana Spacing_18 gray f10 justify">
-          I made a poster for "Abema TV Ozumo" in AbemaTV under the art director. I carefully noticed the natural layout of motifs (especially clouds) and logos, color selection of models' shadows (colors that make use of the main color), etc. so as not to destroy the world view like a Hanafuda. In addition, the phoenix of the illustration adjusted the scaling / positioning with conscious of mutual relations so as not to disturb the impression of the model which is the main motif. One of the vertical version advertisements will be posted in "CyberAgrnt 20th anniversary magazine".
-        </div>
-      </div>
-
-    </div>
-
-    <!--/////////////////////////////////////// g_pop ////////////////////////////////////////////-->
-    <div class="g_pop_container">
-      <div id="g_pop2">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="col-xs-12 col-sm-12 margin_bottom_36">
-            <img src="Img_ArtWork/Hikyo/Hikyo_lp.png" class="img_2">
-          </div>
-
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-      <div id="g_pop">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/Connection/Connection_BG_Black.jpg" class="img_2 margin_top_12">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/Connection//Connection_MainVisual.jpg" class="img_2 margin_top_12 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/Connection//Connection_ModelWalk.jpg" class="img_2 margin_top_12 margin_bottom_36">
-          </div>
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-      <div id="g_pop4">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/BYB/BYB_1.png" class="img_2 margin_top_12 margin_bottom_36">
-          </div>
-
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-      <div id="g_pop3">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/KHSIER/KHSIER_lp.png" class="img_2 margin_bottom_36">
-          </div>
-
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-      <div id="g_pop5">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-01.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-02.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-03.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-04.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-05.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-06.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-07.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-08.png" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/SoundSelector/SoundSelector-10.png" class="img_2 margin_bottom_36">
-          </div>
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-      <div id="g_pop6">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/shaka/shaka_1.jpg" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <a href="https://open.spotify.com/album/3sl0bWQjiPtWnPahRZvl5U" target=”_blank” class="square_btn Sumana margin_bottom_36">Litsen this song</a>
-          </div>
-
-
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-      <div id="g_pop7">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="relative">
-            <div class="col-xs-12 col-sm-12">
-              <img src="Img_ArtWork/kehai/KEHAI_lp.png" class="img_alpha margin_bottom_36">
-            </div>
-          </div>
-          <div class="absolute2">
-            <div class="col-xs-12 col-sm-12">
-              <div class="video">
-                <iframe src="https://player.vimeo.com/video/314988245" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            </div>
-          </div>
-
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-      <div id="g_pop8">
-        <div class="row low col-sm-9 col-xs-12">
-
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/AbemaOzumo/Ozumo_Poster_yoko.jpg" class="img_2 margin_bottom_36">
-          </div>
-          <div class="col-xs-12 col-sm-12">
-            <img src="Img_ArtWork/AbemaOzumo/Ozumo_Poster_tate.jpg" class="img_2 margin_bottom_36">
-            <div class="margin_bottom_36">
-              <img src="Img_ArtWork/AbemaOzumo/Ozumo_Nenshi.png" class="img_2">
-            </div>
-          </div>
-
-          <a href="#header" class="backtotop">
-            <p style="color:#0F0F0E;" class="Sumana f10">↑ Back to Top</p>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <!--///////////////////////////////// about /////////////////////////////////-->
-
-  <div class="about">
-    <div class="col-sm-1 col-md-2 About_MarginLeft" style="z-index:1">
-      <div class="canvas">
-        <div id="line"></div>
-        <img src="Img_ShoDesign_Top/profile_3.png" id="profile">
-        <!-- <img src="videos/maru_2.gif" class="maru" id="maru"> -->
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 margin_top_12 Sawarabi Ja_MarginTop" style="z-index:2">
-      <div class="About_Sentence_14">根本 翔太</div>
-      <div class="About_Sentence_8_Gray Spacing_10">東京都在住</div>
-      <div class="About_Sentence_10 Spacing_30">
-        1994年に東京で生まれる<br><br> 首都大学東京入学<br><br>
-      </div>
-      <div class="About_Sentence_12 Spacing_18">
-        学歴
-      </div>
-      <div class="Spacing_18 About_Sentence_10">
-        2015年 - &nbsp;&nbsp;首都大学東京<br>専攻: &nbsp;グラフィックデザイン<br><br> 2013年 - 2014年 &nbsp;&nbsp;科学技術学園高等学校<br><br> 2011年 - 2013年&nbsp;&nbsp;高等工科学校<br><br>
-      </div>
-      <div class="Spacing_18 About_Sentence_12">
-        経歴
-      </div>
-      <div class="About_Sentence_10 Spacing_18">
-        2018年 &nbsp;&nbsp;AbemaTV VSXスタジオでインターンとして働く<br><br> 2017年 &nbsp;&nbsp;文化服装学院の卒業制作チーム5565のクリエイティブを担当<br><br>2017年 &nbsp;&nbsp;AbemaTVのVXスタジオで短期インターンとして働く<br><br>2016年 &nbsp;&nbsp;ニューヨークで3ヶ月の短期留学<br><br>2014年 &nbsp;&nbsp;アートブレーンカンパニー照明部でインターンとして働く<br><br>
-      </div>
-      <div class="margin_bottom"></div>
-    </div>
-    <div class="col-sm-6 col-md-4 Sumana" style="z-index:2;">
-      <div class="About_Sentence_14 En_MarginTop"><b>Shota Nemoto</b></div>
-      <div class="About_Sentence_8_Gray Spacing_10">Tokyo Japan</div>
-      <div class="About_Sentence_10 Spacing_30">
-        Born in Japan (1994).<br><br> Working on Degree in graphic design at the Tokyo Metropolitan University.<br><br>
-      </div>
-      <div class="About_Sentence_12 Spacing_30">
-        <b>Educational Background</b>
-      </div>
-      <div class="About_Sentence_10 margin_top_24">
-        April, 2015 - &nbsp;&nbsp;Tokyo Metropolitan University<br>Major: &nbsp;Graphic Design<br><br> June, 2013 - March, 2014 &nbsp;&nbsp;Science and Technical High School<br><br> April, 2011 - June, 2013 &nbsp;&nbsp;JGSDF High Techinical School<br><br>
-      </div>
-      <div class="About_Sentence_12 Spacing_30">
-        <b>Experience</b>
-      </div>
-      <div class="About_Sentence_10 margin_top_24">
-        February, 2018 &nbsp;&nbsp;Internship at VSX in AbemaTV<br><br> December, 2017 &nbsp;&nbsp;Branding of 5565, is the guraduation art work of the team in Bunka Fashion College<br><br> October, 2017 &nbsp;&nbsp;Internship at VX Studio in AbemaTV<br><br>June, 2016 &nbsp;&nbsp;Stayed at NYC for 3 months to learn more about graphic design.<br><br> August, 2014 &nbsp;&nbsp;Worked at Art Brain Company as a student designer<br><br>
-      </div>
-      <div class="About_Sentence_10 Spacing_50">
-        Mail / sho0930k@gmail.com
-      </div>
-      <div class="margin_bottom margin_bottom_50"></div>
-    </div>
-  </div>
-</div>
-<div id="greeting">恐れ入りますが、お使いの端末では当サイトはご覧になれません</div>
-<div class="col-xs-12 col-sm-12 col-mid-12 footer Sumana f10">2018 LMHRST All Rights Reserved</div>
-
-
 </body>
-
-<!--  <div id="footer"><p class="footer_sentence">Copy Light 2017</p></div>-->
 
 </html>
